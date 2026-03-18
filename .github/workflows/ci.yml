@@ -58,3 +58,19 @@ jobs:
 
       - name: Run pre-commit checks
         run: pre-commit run --all-files
+
+      - name: Initialize s3 bucket example
+        working-directory: examples/s3-bucket-basic
+        run: terraform init
+
+      - name: Validate s3 bucket example
+        working-directory: examples/s3-bucket-basic
+        run: terraform validate
+
+      - name: Initialize CloudWatch log group example
+        working-directory: examples/cloudwatch-log-group-basic
+        run: terraform init
+
+      - name: Validate CloudWatch log group example
+        working-directory: examples/cloudwatch-log-group-basic
+        run: terraform validate
