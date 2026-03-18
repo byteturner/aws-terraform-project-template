@@ -1,0 +1,7 @@
+project_name      = "payments"
+environment       = "dev"
+owner             = "platform-team"
+cost_center       = "shared-services"
+aws_region        = "us-east-1"
+log_group_suffix  = "application"
+retention_in_days = 30

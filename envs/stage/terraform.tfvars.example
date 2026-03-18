@@ -1,0 +1,11 @@
+project_name = "aws-platform"
+environment  = "stage"
+aws_region   = "us-east-1"
+owner        = "platform-engineering"
+cost_center  = "cc-2001"
+
+additional_tags = {
+  compliance_tier = "enhanced"
+  data_class      = "internal"
+  release_channel = "pre-production"
+}

@@ -1,0 +1,10 @@
+project_name = "payments-platform"
+environment  = "dev"
+aws_region   = "us-east-1"
+owner        = "platform-team"
+cost_center  = "engineering"
+
+additional_tags = {
+  BusinessUnit = "platform"
+  Repository   = "aws-terraform-project-template"
+}

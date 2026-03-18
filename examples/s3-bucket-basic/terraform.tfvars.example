@@ -1,0 +1,7 @@
+project_name         = "artifact-store"
+environment          = "dev"
+owner                = "platform-team"
+cost_center          = "shared-services"
+aws_region           = "us-east-1"
+bucket_suffix        = "artifacts"
+bucket_name_override = null

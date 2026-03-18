@@ -1,0 +1,11 @@
+project_name = "aws-platform"
+environment  = "prod"
+aws_region   = "us-east-1"
+owner        = "platform-engineering"
+cost_center  = "cc-3001"
+
+additional_tags = {
+  compliance_tier = "critical"
+  data_class      = "confidential"
+  service_tier    = "production"
+}
