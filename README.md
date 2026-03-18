@@ -83,9 +83,11 @@ The configured checks cover formatting, validation, module README consistency, a
 
 ## CI
 
-GitHub Actions runs the same baseline checks on pushes to `main` and pull requests targeting `main`:
+GitHub Actions validates the root module and runs the repository quality baseline on pushes to `main` and pull requests targeting `main`.
 
+The workflow runs:
 - `terraform fmt -check -recursive`
 - `terraform init -backend=false`
 - `terraform validate`
 - `pre-commit run --all-files`
+- `terraform init` and `terraform validate` for runnable examples under `examples/`
